@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BJ J. Bargamento | Portfolio</title>
+  <meta name="description" content="Portfolio of BJ J. Bargamento, a student learning web development." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">BJ J. Bargamento</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <nav id="nav" class="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-btn" id="themeBtn" type="button">Light mode</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="avatar" aria-label="Profile photo of BJ J. Bargamento">
+          <div class="avatar-inner">
+            <!-- Save your own photo as images/profile.jpg. Until then, initials show. -->
+            <img src="images/profile.jpg" alt="Portrait of BJ J. Bargamento" id="profileImg" />
+            <span class="initials" id="initials">BJ</span>
+          </div>
+        </div>
+        <div>
+          <h1>BJ J. Bargamento</h1>
+          <p class="lead">
+            I'm a student learning web development. I build responsive pages that work on both a phone and a computer,
+            and I'm drawn to public-service websites that make everyday tasks easier for people.
+          </p>
+          <div class="btn-row">
+            <a class="btn primary" href="#projects">See my project</a>
+            <a class="btn outline" href="mailto:your.email@example.com">Email me</a>
+          </div>
+          <p class="now">Right now I'm <strong id="typed">building responsive pages</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About me</h2>
+        <div class="about-grid">
+          <div>
+            <p>I'm BJ, a 21-year-old student from Cebu City. I'm building my web development skills through class projects, starting with the front end and working toward full-stack.</p>
+            <p>My biggest project so far is a (Canteen IMS) is a Managing canteen inventory manually is a common challenge in many educational institutions and food service establishments. Boarding House Management System (BHMS)  is a digital platform designed to streamline the management of boarding houses and Sigbin Hunt is a 3D first-person horror investigation game in which the player is dispatched to investigate a string of missing livestock and unexplained disappearances in a rural barangay in Naga, Cebu.</p>
+          </div>
+          <dl class="facts">
+            <dt>Based in</dt><dd>Cebu City, Philippines</dd>
+            <dt>Focus</dt><dd>Front-end web development</dd>
+            <dt>Interested in</dt><dd>Responsive design, accessibility, public-service websites and Game developments</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="cards two">
+          <article class="card">
+            <h3>What I can do now</h3>
+            <ul class="list">
+              <li>Structure pages with HTML5 and style them with CSS3</li>
+              <li>Build basic responsive layouts with media queries</li>
+              <li>Create navigation bars and dropdown menus</li>
+              <li>Write basic JavaScript</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>What I'm still learning</h3>
+            <ul class="list">
+              <li>PHP and MySQL, which my team used for the backend</li>
+              <li>Bootstrap and jQuery</li>
+              <li>Accessibility, such as color contrast and screen readers</li>
+              <li>Git and publishing sites online</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <p class="muted">Click any picture to view it larger.</p>
+        <div class="projects-list">
+          <!-- Project 1 -->
+          <article class="card project wide">
+            <div class="shot" style="--ar: 1874 / 923" role="button" tabindex="0"
+                 aria-label="View larger: CanteenIMS admin dashboard" data-caption="CanteenIMS: admin dashboard">
+              <img src="images/canteen-ims.jpg" alt="CanteenIMS admin dashboard showing total items, inventory value, low stock, and stock transactions" />
+              <span class="shot-text">Screenshot placeholder<br /><small>images/canteen-ims.jpg</small></span>
+              <span class="zoom-hint" aria-hidden="true">&#128269; Click to view</span>
+            </div>
+            <div>
+              <h3>CanteenIMS</h3>
+              <p>Managing canteen inventory manually is a common challenge in many educational institutions and food service establishments. In most small canteen operations, stock tracking is done through handwritten records or simple spreadsheets, making it prone to human error, data inconsistency, and time-consuming reconciliation. The lack of a centralized and automated system results in inefficient stock monitoring, undetected shortages, and difficulty in maintaining accurate transaction logs.</p>
+              <dl class="facts">
+                <dt>My contribution</dt>
+                <dd><em class="ph">Front-end styling for the About page: the header and logo layout, the navigation bar with dropdown menus,and the responsive layout and backend for records and data management and admin panel</em></dd>
+                <dt>Built with</dt>
+                <dd><em class="ph">Django(Python), HTML, CSS3, JavaScript, SQlite3 (via Django ORM)</em></dd>
+                <dt>Live link</dt>
+                <dd>Not available yet</dd>
+              </dl>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project wide">
+            <div class="shot" style="--ar: 1600 / 678" role="button" tabindex="0"
+                 aria-label="View larger: House Sync title page" data-caption="House Sync: Boarding House Management System">
+              <img src="images/house-sync.jpg" alt="House Sync, Boarding House Management System. Syncing your property management, effortlessly." />
+              <span class="shot-text">Screenshot placeholder<br /><small>images/house-sync.jpg</small></span>
+              <span class="zoom-hint" aria-hidden="true">&#128269; Click to view</span>
+            </div>
+            <div>
+              <h3>House Sync</h3>
+              <p>Boarding House Management System (BHMS)  is a digital platform designed to streamline the management of boarding houses. The system will provide an intuitive and efficient interface for landlords, tenants, and administrators to manage room availability, tenant information, payments, and maintenance requests. The system will be available as both a desktop and mobile UI to ensure accessibility for different users.</p>
+              <dl class="facts">
+                <dt>My contribution</dt>
+                <dd><em class="ph">UI AND UX Designer, resopsilble for the user interface and systemexp experience.</em></dd>
+                <dt>Built with</dt>
+                <dd><em class="ph">HTML5, CSS3, JavaScript, Bootstrap, PHP, MySQL</em></dd>
+                <dt>Live link</dt>
+                <dd>Not available yet</dd>
+              </dl>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project wide portrait">
+            <div class="shot" style="--ar: 501 / 709" role="button" tabindex="0"
+                 aria-label="View larger: Sigbin Hunt cover" data-caption="Sigbin Hunt: promotional cover">
+              <img src="images/sigbin-hunt.jpg" alt="Sigbin Hunt promotional magazine cover, a Cebuano folklore horror game" />
+              <span class="shot-text">Screenshot placeholder<br /><small>images/sigbin-hunt.jpg</small></span>
+              <span class="zoom-hint" aria-hidden="true">&#128269; Click to view</span>
+            </div>
+            <div>
+              <h3>Sigbin Hunt</h3>
+              <p>Sigbin Hunt is a 3D first-person horror investigation game in which the player is dispatched to investigate a string of missing livestock and unexplained disappearances in a rural barangay in Naga, Cebu. As the investigation unfolds across a farm, a forest trail, and finally the creature's lair, the player uncovers proof that a Sigbin  a creature from Visayan folklore  is responsible, and must gather materials, craft a weapon capable of harming it, corner and kill it, then escape the barangay before sunrise. The concept is inspired by a desire to build a horror game rooted in local Cebuano and Visayan culture, using the Sigbin's own folklore traits it’s a version to salt and garlic, its elusiveness as the foundation for the game's investigation, crafting, and confrontation mechanics, presented through a fully 3D, first-person perspective built in Roblox Studio for an immersive, accessible horror experience.</p>
+              <dl class="facts">
+                <dt>My contribution</dt>
+                <dd><em class="ph">Scripts game logic in Lua within Roblox Studio, including the Sigbin AI state machine, crafting system, QTE kill sequence, and cutscene triggers.</em></dd>
+                <dt>Built with</dt>
+                <dd>Roblox Studio</dd>
+                <dt>Live link</dt>
+                <dd>Not available yet</dd>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>I'm open to learning opportunities, collaboration, and feedback on my work. The best way to reach me is by email.</p>
+        <div class="btn-row">
+          <a class="btn primary" href="mailto:bargamentobj@gmail.com">bargamentobj@gmail.com</a>
+          <button class="btn outline" id="copyEmail" type="button" data-email="bargamentobj@gmail.com">Copy email address</button>
+        </div>
+        <p class="muted small" id="copyMsg" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">&copy; <span id="year"></span> BJ J. Bargamento</div>
+  </footer>
+
+  <!-- Image viewer (opens when a project picture is clicked) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+    <button class="lb-close" type="button" aria-label="Close image">&times;</button>
+    <button class="lb-nav prev" type="button" aria-label="Previous image">&#8249;</button>
+    <figure class="lb-fig">
+      <img id="lbImg" alt="" />
+      <figcaption><span id="lbCap"></span> <span class="lb-count" id="lbCount"></span></figcaption>
+    </figure>
+    <button class="lb-nav next" type="button" aria-label="Next image">&#8250;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
